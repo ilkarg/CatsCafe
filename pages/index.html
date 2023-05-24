@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cats Cafe</title>
         <!--CSS-->
-		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="/pages/css/style.css" type="text/css">
 		<!--Animate-->
-		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="/pages/css/animate.min.css">
 		<!--Bootstrap CSS-->
-		<link href="css/bootstrap.min.css" rel="stylesheet" >
+		<link href="/pages/css/bootstrap.min.css" rel="stylesheet" >
         <!--Icon Tab-->
-		<link rel="icon" type="image/png" href="img/icon-logo.png" />
+		<link rel="icon" type="image/png" href="/pages/img/icon-logo.png" />
     </head>
     <body>
 
@@ -24,28 +24,28 @@
                             <div class="social-icon-header">
                                 <div class="icon">
                                     <a href="#" class="d-block w-100 h-100">
-                                        <img class="d-flex align-items-center justify-content-center" src="img/vk.svg" alt="">
+                                        <img class="d-flex align-items-center justify-content-center" src="/pages/img/vk.svg" alt="">
                                     </a>
                                 </div>
                                 <div class="icon">
                                     <a href="#" class="d-block w-100 h-100">
-                                        <img class="d-flex align-items-center justify-content-center" src="img/whatsapp.svg" alt="">
+                                        <img class="d-flex align-items-center justify-content-center" src="/pages/img/whatsapp.svg" alt="">
                                     </a>
                                 </div>
                                 <div class="icon">
                                     <a href="#" class="d-block w-100 h-100">
-                                        <img class="d-flex align-items-center justify-content-center" src="img/telegram.svg" alt="">
+                                        <img class="d-flex align-items-center justify-content-center" src="/pages/img/telegram.svg" alt="">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="phone col d-flex align-items-center justify-content-end">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/phone.svg" alt="phone">
+                                <img class="d-flex" src="/pages/img/phone.svg" alt="phone">
                             </div>
                             <p class="d-flex align-items-center justify-content-end">+7 904 329 16 11</p>
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/map.svg" alt="phone">
+                                <img class="d-flex" src="/pages/img/map.svg" alt="phone">
                             </div>
                             <p class="d-flex align-items-center justify-content-end">Культуры проспект, 2, г. Омск, </p>
                         </div>
@@ -55,22 +55,22 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <div class="logo">
-                        <a class="navbar-brand m-0 text-center" href="index.html">
+                        <a class="navbar-brand m-0 text-center" href="/">
                             <div class="slogan text-start">
                                 <h1 class="text-uppercase">Сats Cafe</h1>
                             </div> 
-                            <img src="img/logo.png" alt="logo">
+                            <img src="/pages/img/logo.png" alt="logo">
                         </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                            <img src="img/list.svg" alt="menu">
+                            <img src="/pages/img/list.svg" alt="menu">
                         </span>
                       </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto w-100 justify-content-around">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="index.html">Главная</a>
+                                    <a class="nav-link active" href="/">Главная</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#company">О нас</a>
@@ -91,7 +91,9 @@
                                     <a class="nav-link" href="#contact">Контакты</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="exit nav-link" href="login.html"><button onclick="logout()">Выйти</button></a>
+                                    <a class="nav-link" id="authButton">
+                                        <button id="button" onclick="logout()">Выйти</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -161,7 +163,7 @@
                     </div>
                     <div class="col-lg-4 d-lg-block d-none">
                         <div class="company-img">
-                            <img src="img/2.jpg" alt="">
+                            <img src="/pages/img/2.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -249,14 +251,14 @@
                             <input type="time" placeholder="Телефон" id="request" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}">
                         </div>
                         <div class="btn-company text-center">
-                            <a href="services.html">
+                            <a href="#">
                                 <button type="button" class="btn text-center">Забронировать</button>
                             </a>
                         </div>
                     </div>
                         <div class="col-lg-6 d-lg-block d-none">
                             <div class="company-img">
-                                <img src="img/3.jpg" alt="">
+                                <img src="/pages/img/3.jpg" alt="">
                             </div>
                         </div>
                 </div>
@@ -270,7 +272,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img-cats">
-                        <img src="img/4.jpg" alt="">
+                        <img src="/pages/img/4.jpg" alt="">
                         <div class="name-cats">
                             <h1 class="text-center">Гаражик</h1>
                         </div>
@@ -278,7 +280,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img-cats">
-                        <img src="img/5.jpg" alt="">
+                        <img src="/pages/img/5.jpg" alt="">
                         <div class="name-cats">
                             <h1 class="text-center">Коксик</h1>
                         </div>
@@ -286,7 +288,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img-cats">
-                        <img src="img/6.jpg" alt="">
+                        <img src="/pages/img/6.jpg" alt="">
                         <div class="name-cats">
                             <h1 class="text-center">Всеед</h1>
                         </div>
@@ -294,7 +296,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img-cats">
-                        <img src="img/7.jpg" alt="">
+                        <img src="/pages/img/7.jpg" alt="">
                         <div class="name-cats">
                             <h1 class="text-center">Пушиглаз</h1>
                         </div>
@@ -302,7 +304,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img-cats">
-                        <img src="img/8.jpg" alt="">
+                        <img src="/pages/img/8.jpg" alt="">
                         <div class="name-cats">
                             <h1 class="text-center">Хвостотёр</h1>
                         </div>
@@ -310,7 +312,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img-cats">
-                        <img src="img/9.jpg" alt="">
+                        <img src="/pages/img/9.jpg" alt="">
                         <div class="name-cats">
                             <h1 class="text-center">Бурмодося</h1>
                         </div>
@@ -341,7 +343,7 @@
                     </div>
                     <div class="col-lg-6 d-lg-block d-none">
                         <div class="company-img">
-                            <img src="img/10.jpg" alt="">
+                            <img src="/pages/img/10.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -363,49 +365,49 @@
                         <h1 class="name-company">Cats Cafe</h1>
                         <div class="phone text-start d-flex justify-content-start align-items-center">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/time.svg" alt="phone">
+                                <img class="d-flex" src="/pages/img/time.svg" alt="phone">
                             </div>
                             <p class="d-flex align-items-center justify-content-start"><span>пн:</span> выходной</p>
                         </div>
                         <div class="phone text-start d-flex justify-content-start align-items-center">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/time.svg" alt="phone">
+                                <img class="d-flex" src="/pages/img/time.svg" alt="phone">
                             </div>
                             <p class="d-flex align-items-center justify-content-start"><span>вт:</span> 12:00 - 21:00</p>
                         </div>
                         <div class="phone text-start d-flex justify-content-start align-items-center">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/time.svg" alt="phone">
+                                <img class="d-flex" src="/pages/img/time.svg" alt="phone">
                             </div>
                             <p class="d-flex align-items-center justify-content-start"><span>ср:</span> 16:00 - 21:00</p>
                         </div>
                         <div class="phone text-start d-flex justify-content-start align-items-center">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/time.svg" alt="phone">
+                                <img class="d-flex" src="/pages/img/time.svg" alt="phone">
                             </div>
                             <p class="d-flex align-items-center justify-content-start"><span>чт:</span> 16:00 - 21:00</p>
                         </div>
                         <div class="phone text-start d-flex justify-content-start align-items-center">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/time.svg" alt="phone">
+                                <img class="d-flex" src="/pages/img/time.svg" alt="phone">
                             </div>
                             <p class="d-flex align-items-center justify-content-start"><span>пт, сб, вс:</span> 12:00 - 21:00</p>
                         </div>
                         <div class="phone text-start d-flex justify-content-start align-items-center">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/phone_contact.svg" alt="phone">
+                                <img class="d-flex" src="/pages/img/phone_contact.svg" alt="phone">
                             </div>
                             <p class="d-flex align-items-center justify-content-start">+7 904 329 16 11</p>
                         </div>
                         <div class="phone text-start d-flex justify-content-start align-items-center">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/mail.svg" alt="mail">
+                                <img class="d-flex" src="/pages/img/mail.svg" alt="mail">
                             </div>
                             <p class="d-flex align-items-center justify-content-start">catscafe@mail.ru</p>
                         </div>
                         <div class="phone text-start d-flex justify-content-start align-items-center">
                             <div class="icon-phone">
-                                <img class="d-flex" src="img/map_contact.svg" alt="mail">
+                                <img class="d-flex" src="/pages/img/map_contact.svg" alt="mail">
                             </div>
                             <p class="d-flex align-items-center justify-content-start">г. Омск, ул. Культуры проспект, 2</p> 
                         </div>
@@ -419,8 +421,8 @@
             <div class="footer container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <a class="navbar-brand m-0 text-center" href="index.html">
-                            <img src="img/logo.png" alt="logo">
+                        <a class="navbar-brand m-0 text-center" href="/">
+                            <img src="/pages/img/logo.png" alt="logo">
                             <div class="slogan text-start">
                                 <h1 class="text-uppercase">Cats Cafe</h1>
                             </div> 
@@ -455,17 +457,17 @@
                         <div class="social-icon">
                             <div class="icon">
                                 <a href="#">
-                                    <img src="img/vk.svg" alt="">
+                                    <img src="/pages/img/vk.svg" alt="">
                                 </a>
                             </div>
                             <div class="icon">
                                 <a href="#">
-                                    <img src="img/whatsapp.svg" alt="">
+                                    <img src="/pages/img/whatsapp.svg" alt="">
                                 </a>
                             </div>
                             <div class="icon">
                                 <a href="#">
-                                    <img src="img/telegram.svg" alt="">
+                                    <img src="/pages/img/telegram.svg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -478,9 +480,14 @@
           </footer>
     </body>
     <!--JQuery link-->
-	<script src="js/jquery.js"></script>
+	<script src="/pages/js/jquery.js"></script>
 	<!--Bootstrap JS-->
-	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="/pages/js/bootstrap.bundle.min.js"></script>
 	<!--JS-->
-	<script src="js/script.js"></script>
+	<script src="/pages/js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            isAuthorized();
+        });
+    </script>
 </html>

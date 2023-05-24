@@ -1,9 +1,12 @@
 <?php
 
-$router->post("plus", "MainController::plus");
+$router->get("/", "PageController::index");
+$router->get("login", "PageController::login");
+$router->get("registration", "PageController::registration");
+$router->get("admin", "PageController::admin");
 
-$router->get("test", "MainController::test");
-
-$router->get("test123", function() { MainController::test123(); });
-
-$router->get("/", function() { MainController::index(); });
+$router->post("api/v1/login", "AuthController::login");
+$router->post("api/v1/registration", "AuthController::registration");
+$router->post("api/v1/logout", "AuthController::logout");
+$router->post("api/v1/isAuthorized", "AuthController::isAuthorized");
+$router->post("api/v1/isAdmin", "AuthController::isAdmin");
