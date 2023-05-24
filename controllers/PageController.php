@@ -22,7 +22,7 @@ class PageController {
 
     public static function admin() {
         session_start();
-        if ($_SESSION["user"] == "admin") {
+        if ($_SESSION["user"]["login"] == "admin") {
             $template = new Template(__DIR__ . "/../pages/admin/index.html");
             echo View::createFromTemplate($template);
         } else {
