@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cats Cafe</title>
+        <!--CSS-->
+		<link rel="stylesheet" href="../css/style.css" type="text/css">
+		<!--Animate-->
+		<link rel="stylesheet" href="../css/animate.min.css">
+		<!--Bootstrap CSS-->
+		<link href="../css/bootstrap.min.css" rel="stylesheet" >
+        <!--Icon Tab-->
+		<link rel="icon" type="image/png" href="../img/icon-logo.png" />
+    </head>
+    <body>
+
+        <div class="menu fixed-top">
+            <div class="header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="slogan col">
+                            <div class="social-icon-header">
+                                <div class="icon">
+                                    <a href="#" class="d-block w-100 h-100">
+                                        <img class="d-flex align-items-center justify-content-center" src="../img/vk.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#" class="d-block w-100 h-100">
+                                        <img class="d-flex align-items-center justify-content-center" src="../img/whatsapp.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#" class="d-block w-100 h-100">
+                                        <img class="d-flex align-items-center justify-content-center" src="../img/telegram.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone col d-flex align-items-center justify-content-end">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="../img/phone.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-end">+7 904 329 16 11</p>
+                            <div class="icon-phone">
+                                <img class="d-flex" src="../img/map.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-end">Культуры проспект, 2, г. Омск, </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="logo">
+                        <a class="navbar-brand m-0 text-center" href="index.html">
+                            <div class="slogan text-start">
+                                <h1 class="text-uppercase">Сats Cafe</h1>
+                            </div> 
+                            <img src="../img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <img src="../img/list.svg" alt="menu">
+                        </span>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto w-100 justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Бронирование</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="exit nav-link" href="../login.html"><button onclick="logout()">Выйти</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+              </nav>
+        </div>
+
+          <div class="bg-main">
+            <div class="container">
+                <div class="row">
+                    <div class="title-bg-main text-start">
+                        <h1>Cats cafe</h1>
+                        <p>Мурчиим на Проспекте Культуры проспект, 2</p>
+                        <div class="block-main-btn">
+                            <div class="bg-main-btn text-center">
+                                <a href="#booking">
+                                    <button type="button" class="btn">Забронировать</button>
+                                </a>
+                            </div>
+                            <div class="bg-main-btn text-center">
+                                <a href="#cats">
+                                    <button type="button" class="btn">Посмотреть котиков</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="admin-booking">
+            <div class="container">
+                <div class="row">
+                    <div class="title-block">
+                        <h1 class="text-uppercase text-center">Забронированые<span> посещения</span></h1>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="admin-booking-block">
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/account.svg" alt="">
+                                </div>
+                                <h1>ФИО:</h1>
+                                <p>Шемяков Даниил Ильич</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/phone_contact.svg" alt="">
+                                </div>
+                                <h1>Номер телефона:</h1>
+                                <p>+7 901 567 23 32</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/rate.svg" alt="">
+                                </div>
+                                <h1>Тариф:</h1>
+                                <p class="d-flex align-items-bottom">Взрослый</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/calendar.svg" alt="">
+                                </div>
+                                <h1>Дата:</h1>
+                                <p class="d-flex align-items-bottom">24.05.2023</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/time.svg" alt="">
+                                </div>
+                                <h1>Время:</h1>
+                                <p class="d-flex align-items-bottom">12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="admin-booking-block">
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/account.svg" alt="">
+                                </div>
+                                <h1>ФИО:</h1>
+                                <p>Шемяков Даниил Ильич</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/phone_contact.svg" alt="">
+                                </div>
+                                <h1>Номер телефона:</h1>
+                                <p>+7 901 567 23 32</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/rate.svg" alt="">
+                                </div>
+                                <h1>Тариф:</h1>
+                                <p class="d-flex align-items-bottom">Взрослый</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/calendar.svg" alt="">
+                                </div>
+                                <h1>Дата:</h1>
+                                <p class="d-flex align-items-bottom">24.05.2023</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/time.svg" alt="">
+                                </div>
+                                <h1>Время:</h1>
+                                <p class="d-flex align-items-bottom">12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="admin-booking-block">
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/account.svg" alt="">
+                                </div>
+                                <h1>ФИО:</h1>
+                                <p>Шемяков Даниил Ильич</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/phone_contact.svg" alt="">
+                                </div>
+                                <h1>Номер телефона:</h1>
+                                <p>+7 901 567 23 32</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/rate.svg" alt="">
+                                </div>
+                                <h1>Тариф:</h1>
+                                <p class="d-flex align-items-bottom">Взрослый</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/calendar.svg" alt="">
+                                </div>
+                                <h1>Дата:</h1>
+                                <p class="d-flex align-items-bottom">24.05.2023</p>
+                            </div>
+                            <div class="booking-block d-flex align-items-center">
+                                <div class="img-booking">
+                                    <img src="../img/time.svg" alt="">
+                                </div>
+                                <h1>Время:</h1>
+                                <p class="d-flex align-items-bottom">12:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <footer id="footer">
+            <div class="footer container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a class="navbar-brand m-0 text-center" href="index.html">
+                            <img src="../img/logo.png" alt="logo">
+                            <div class="slogan text-start">
+                                <h1 class="text-uppercase">Cats Cafe</h1>
+                            </div> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="navbar-nav m-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#booking">Бронирование</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="title-block">
+                            <h1 class="text-uppercase text-center">Социальные сети</h1>
+                        </div>
+                        <div class="social-icon">
+                            <div class="icon">
+                                <a href="#">
+                                    <img src="../img/vk.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <img src="../img/whatsapp.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <img src="../img/telegram.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <h1 class="text-center">© Copyright, Cats Cafe 2023.</h1>
+                    </div>
+                </div>
+              </div>
+          </footer>
+    </body>
+    <!--JQuery link-->
+	<script src="js/jquery.js"></script>
+	<!--Bootstrap JS-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!--JS-->
+	<script src="js/script.js"></script>
+</html>

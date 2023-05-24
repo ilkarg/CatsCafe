@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cats Cafe</title>
+        <!--CSS-->
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<!--Animate-->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!--Bootstrap CSS-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" >
+        <!--Icon Tab-->
+		<link rel="icon" type="image/png" href="img/icon-logo.png" />
+    </head>
+    <body>
+
+        <div class="menu fixed-top">
+            <div class="header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="slogan col">
+                            <div class="social-icon-header">
+                                <div class="icon">
+                                    <a href="#" class="d-block w-100 h-100">
+                                        <img class="d-flex align-items-center justify-content-center" src="img/vk.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#" class="d-block w-100 h-100">
+                                        <img class="d-flex align-items-center justify-content-center" src="img/whatsapp.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="#" class="d-block w-100 h-100">
+                                        <img class="d-flex align-items-center justify-content-center" src="img/telegram.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone col d-flex align-items-center justify-content-end">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/phone.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-end">+7 904 329 16 11</p>
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/map.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-end">Культуры проспект, 2, г. Омск, </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="logo">
+                        <a class="navbar-brand m-0 text-center" href="index.html">
+                            <div class="slogan text-start">
+                                <h1 class="text-uppercase">Сats Cafe</h1>
+                            </div> 
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <img src="img/list.svg" alt="menu">
+                        </span>
+                      </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto w-100 justify-content-around">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#company">О нас</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#price">Цены</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#booking">Бронирование</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#cats">Наши котики</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#roots">Правила</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="exit nav-link" href="login.html"><button onclick="logout()">Выйти</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+              </nav>
+        </div>
+
+          <div class="bg-main">
+            <div class="container">
+                <div class="row">
+                    <div class="title-bg-main text-start">
+                        <h1>Cats cafe</h1>
+                        <p>Мурчиим на Проспекте Культуры проспект, 2</p>
+                        <div class="block-main-btn">
+                            <div class="bg-main-btn text-center">
+                                <a href="#booking">
+                                    <button type="button" class="btn">Забронировать</button>
+                                </a>
+                            </div>
+                            <div class="bg-main-btn text-center">
+                                <a href="#cats">
+                                    <button type="button" class="btn">Посмотреть котиков</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="company" id="company">
+            <div class="container">
+                <div class="row">
+                    <div class="title-block">
+                        <h1 class="text-uppercase text-center">О<span> нас</span></h1>
+                    </div>
+                    <div class="col-lg-8 col-md-12 row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="company-block">
+                                <h1 class="text-uppercase text-start">Отдых</h1>
+                                <p>Приходите, когда вам захочется. Поработать, расслабиться, получить приятные эмоции, понежиться с котиками, покормить их, посмотреть фильмы, поиграть в приставку и настолки, принять участие в мастер-классе. А для ваших питомцев у нас есть котоняня.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="company-block">
+                                <h1 class="text-uppercase text-start">Площадка</h1>
+                                <p>Проведите у нас семейный праздник, необычное свидание или крутое мероприятие. У нас есть все для этого.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="company-block">
+                                <h1 class="text-uppercase text-start">Кототерапия</h1>
+                                <p>Общение с животными способствует развитию моторики и улучшает эмоциональный фон. Познакомьтесь с «теплом» и «лечебным эффектом» наших потрясающих котиков. Приводите ребятишек.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="company-block">
+                                <h1 class="text-uppercase text-start">Польза</h1>
+                                <p>Мы помогаем бездомным животным. Наши коты безопасны, общительны, здоровы, стерилизованы, привиты, приучены к лотку и когтеточке. Все, что им нужно для счастья, - любящие хозяева. Возьмите в семью нового друга или позаботьтесь о нем.</p>
+                            </div>
+                        </div>
+                        <div class="btn-company text-center">
+                            <a href="#footer">
+                                <button type="button" class="btn text-center">Режим работы</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-lg-block d-none">
+                        <div class="company-img">
+                            <img src="img/2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="price" id="price">
+            <div class="container">
+                <div class="row">
+                    <div class="title-block">
+                        <h1 class="text-uppercase text-center">Наши<span> Цены</span></h1>
+                    </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="price-block">
+                                <h1 class="text-start">Полный</h1>
+                                <p>300р. - 1 час</p>
+                                <p>400р. - 1.5 часа</p>
+                                <p>600р. - 3 часа</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="price-block">
+                                <h1 class="text-start">Студенты</h1>
+                                <p>250р. - 1 час</p>
+                                <p>350р. - 1.5 часа</p>
+                                <p>500р. - 3 часа</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="price-block">
+                                <h1 class="text-start">Школьники</h1>
+                                <p>250р. - 1 час</p>
+                                <p>350р. - 1.5 часа</p>
+                                <p>500р. - 3 часа</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="price-block">
+                                <h1 class="text-start">Дети до 5 лет</h1>
+                                <p>150р. - 1 час</p>
+                                <p>200р. - 1.5 часа</p>
+                                <p>300р. - 3 часа</p>
+                            </div>
+                        </div>
+                        <div class="btn-price text-center">
+                            <a href="#booking">
+                                <button type="button" class="btn text-center">Забронировать</button>
+                            </a>
+                        </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="booking" id="booking">
+            <div class="container">
+                <div class="row">
+                    <div class="title-block">
+                        <h1 class="text-uppercase text-center">Забронировать<span> посещение</span></h1>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="booking-input">
+                            <label for="postTag">Ваше ФИО</label>
+                            <input name="request" type="text" id="request" placeholder="Имя">
+                        </div>
+                        <div class="booking-input">
+                            <label for="postTag">Ваш номер телефона</label>
+                            <input type="tel" placeholder="Телефон" id="request" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                        </div>
+                        <div class="booking-input">
+                            <label for="postTag">Выберите тариф</label>
+                            <select id="postTag" class="form-select" name="postTag">
+                                <option value="Выберите время">Выберите время</option>
+                                <option value="Взрослый">Взрослый</option>
+                                <option value="Студент">Студент</option>
+                                <option value="Школьник">Школьник</option>
+                                <option value="Дети до 5 лет">Дети до 5 лет</option>
+                            </select>
+                        </div>
+                        <div class="booking-input">
+                            <label for="postTag">Выберите дату</label>
+                            <input type="date" placeholder="Телефон" id="request" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}">
+                        </div>
+                        <div class="booking-input">
+                            <label for="postTag">Выберите Время</label>
+                            <input type="time" placeholder="Телефон" id="request" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}">
+                        </div>
+                        <div class="btn-company text-center">
+                            <a href="services.html">
+                                <button type="button" class="btn text-center">Забронировать</button>
+                            </a>
+                        </div>
+                    </div>
+                        <div class="col-lg-6 d-lg-block d-none">
+                            <div class="company-img">
+                                <img src="img/3.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="container" id="cats">
+            <div class="cats row">
+                <div class="title-block">
+                    <h1 class="text-uppercase text-center">Наши<span> котики</span></h1>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-cats">
+                        <img src="img/4.jpg" alt="">
+                        <div class="name-cats">
+                            <h1 class="text-center">Гаражик</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-cats">
+                        <img src="img/5.jpg" alt="">
+                        <div class="name-cats">
+                            <h1 class="text-center">Коксик</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-cats">
+                        <img src="img/6.jpg" alt="">
+                        <div class="name-cats">
+                            <h1 class="text-center">Всеед</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-cats">
+                        <img src="img/7.jpg" alt="">
+                        <div class="name-cats">
+                            <h1 class="text-center">Пушиглаз</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-cats">
+                        <img src="img/8.jpg" alt="">
+                        <div class="name-cats">
+                            <h1 class="text-center">Хвостотёр</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="img-cats">
+                        <img src="img/9.jpg" alt="">
+                        <div class="name-cats">
+                            <h1 class="text-center">Бурмодося</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="roots" id="roots">
+            <div class="container">
+                <div class="row">
+                    <div class="title-block">
+                        <h1 class="text-uppercase text-center">Наши<span> правила</span></h1>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                            <div class="roots-block">
+                                <ul class="list-group list-group-numbered">
+                                    <li class="list-group-item">При входе в Котофейню мы попросим вас снять уличную обувь и обработать руки антисептиком. У нас есть одноразовые носочки и обработанные тапочки, или же вы можете принести свою сменную обувь.</li>
+                                    <li class="list-group-item">Не кормите, пожалуйста, наших котиков ! Даже если они очень просят.</li>
+                                    <li class="list-group-item">Не фотографируйте в "Котофейне" со вспышкой.</li>
+                                    <li class="list-group-item">Не берите кота на руки, если он против или отдыхает.</li>
+                                    <li class="list-group-item">Не дергайте за хвост, лапки и ушки. Коты очень нежные создания, требующие аккуратного и бережного обращения.</li>
+                                    <li class="list-group-item">Не будите спящих. Здоровый кот должен спать 12-14 часов в сутки. Поэтому в гостях у котов, не стоит тревожить их покой.</li>
+                                    <li class="list-group-item">Не переносите котов с тех мест, где они находятся. Они уже уютно устроились и отдыхают.</li>
+                                    <li class="list-group-item">Не мешайте котам, если они идут в свою комнату по делам или к миске с водой.</li>
+                                  </ul>
+                            </div>
+                    </div>
+                    <div class="col-lg-6 d-lg-block d-none">
+                        <div class="company-img">
+                            <img src="img/10.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="contact" id="contact">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="title-block">
+                        <h1 class="text-uppercase text-center">Наши<span> контакты</span></h1>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="company-img">
+                            <iframe width="100%" height="421px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%D0%9A%D1%83%D0%BB%D1%8C%D1%82%D1%83%D1%80%D1%8B%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82,%202,%20%D0%9E%D0%BC%D1%81%D0%BA+(Cats%20Cafe)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 ps-5">
+                        <h1 class="name-company">Cats Cafe</h1>
+                        <div class="phone text-start d-flex justify-content-start align-items-center">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/time.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-start"><span>пн:</span> выходной</p>
+                        </div>
+                        <div class="phone text-start d-flex justify-content-start align-items-center">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/time.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-start"><span>вт:</span> 12:00 - 21:00</p>
+                        </div>
+                        <div class="phone text-start d-flex justify-content-start align-items-center">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/time.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-start"><span>ср:</span> 16:00 - 21:00</p>
+                        </div>
+                        <div class="phone text-start d-flex justify-content-start align-items-center">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/time.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-start"><span>чт:</span> 16:00 - 21:00</p>
+                        </div>
+                        <div class="phone text-start d-flex justify-content-start align-items-center">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/time.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-start"><span>пт, сб, вс:</span> 12:00 - 21:00</p>
+                        </div>
+                        <div class="phone text-start d-flex justify-content-start align-items-center">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/phone_contact.svg" alt="phone">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-start">+7 904 329 16 11</p>
+                        </div>
+                        <div class="phone text-start d-flex justify-content-start align-items-center">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/mail.svg" alt="mail">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-start">catscafe@mail.ru</p>
+                        </div>
+                        <div class="phone text-start d-flex justify-content-start align-items-center">
+                            <div class="icon-phone">
+                                <img class="d-flex" src="img/map_contact.svg" alt="mail">
+                            </div>
+                            <p class="d-flex align-items-center justify-content-start">г. Омск, ул. Культуры проспект, 2</p> 
+                        </div>
+                    </div>
+                    
+                </div>
+              </div>
+          </div>
+
+          <footer id="footer">
+            <div class="footer container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <a class="navbar-brand m-0 text-center" href="index.html">
+                            <img src="img/logo.png" alt="logo">
+                            <div class="slogan text-start">
+                                <h1 class="text-uppercase">Cats Cafe</h1>
+                            </div> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="navbar-nav m-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#company">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#price">Цены</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#booking">Бронирование</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cats">Наши котики</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#roots">Правила</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Контакты</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="title-block">
+                            <h1 class="text-uppercase text-center">Социальные сети</h1>
+                        </div>
+                        <div class="social-icon">
+                            <div class="icon">
+                                <a href="#">
+                                    <img src="img/vk.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <img src="img/whatsapp.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="#">
+                                    <img src="img/telegram.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <h1 class="text-center">© Copyright, Cats Cafe 2023.</h1>
+                    </div>
+                </div>
+              </div>
+          </footer>
+    </body>
+    <!--JQuery link-->
+	<script src="js/jquery.js"></script>
+	<!--Bootstrap JS-->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!--JS-->
+	<script src="js/script.js"></script>
+</html>
