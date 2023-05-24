@@ -18,6 +18,7 @@ $orm = new SQLite(__DIR__ . "/db/cats_cafe.db");
 // Подключение контроллеров
 include __DIR__ . '/controllers/PageController.php';
 include __DIR__ . '/controllers/AuthController.php';
+include __DIR__ . '/controllers/OrderController.php';
 include __DIR__ . '/controllers/QueryController.php';
 
 // Подключение файла с маршрутами

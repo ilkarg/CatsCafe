@@ -10,3 +10,5 @@ $router->post("api/v1/registration", "AuthController::registration");
 $router->post("api/v1/logout", "AuthController::logout");
 $router->post("api/v1/isAuthorized", "AuthController::isAuthorized");
 $router->post("api/v1/isAdmin", "AuthController::isAdmin");
+$router->post("api/v1/addOrder", "OrderController::addOrder");
+$router->post("api/v1/getOrders", "OrderController::getOrders");

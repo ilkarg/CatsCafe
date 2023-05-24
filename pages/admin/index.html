@@ -106,126 +106,9 @@
 
           <div class="admin-booking">
             <div class="container">
-                <div class="row">
+                <div class="row" id="orders">
                     <div class="title-block">
                         <h1 class="text-uppercase text-center">Забронированые<span> посещения</span></h1>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="admin-booking-block">
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/account.svg" alt="">
-                                </div>
-                                <h1>ФИО:</h1>
-                                <p>Шемяков Даниил Ильич</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/phone_contact.svg" alt="">
-                                </div>
-                                <h1>Номер телефона:</h1>
-                                <p>+7 901 567 23 32</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/rate.svg" alt="">
-                                </div>
-                                <h1>Тариф:</h1>
-                                <p class="d-flex align-items-bottom">Взрослый</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/calendar.svg" alt="">
-                                </div>
-                                <h1>Дата:</h1>
-                                <p class="d-flex align-items-bottom">24.05.2023</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/time.svg" alt="">
-                                </div>
-                                <h1>Время:</h1>
-                                <p class="d-flex align-items-bottom">12:00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="admin-booking-block">
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/account.svg" alt="">
-                                </div>
-                                <h1>ФИО:</h1>
-                                <p>Шемяков Даниил Ильич</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/phone_contact.svg" alt="">
-                                </div>
-                                <h1>Номер телефона:</h1>
-                                <p>+7 901 567 23 32</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/rate.svg" alt="">
-                                </div>
-                                <h1>Тариф:</h1>
-                                <p class="d-flex align-items-bottom">Взрослый</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/calendar.svg" alt="">
-                                </div>
-                                <h1>Дата:</h1>
-                                <p class="d-flex align-items-bottom">24.05.2023</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/time.svg" alt="">
-                                </div>
-                                <h1>Время:</h1>
-                                <p class="d-flex align-items-bottom">12:00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="admin-booking-block">
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/account.svg" alt="">
-                                </div>
-                                <h1>ФИО:</h1>
-                                <p>Шемяков Даниил Ильич</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/phone_contact.svg" alt="">
-                                </div>
-                                <h1>Номер телефона:</h1>
-                                <p>+7 901 567 23 32</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/rate.svg" alt="">
-                                </div>
-                                <h1>Тариф:</h1>
-                                <p class="d-flex align-items-bottom">Взрослый</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/calendar.svg" alt="">
-                                </div>
-                                <h1>Дата:</h1>
-                                <p class="d-flex align-items-bottom">24.05.2023</p>
-                            </div>
-                            <div class="booking-block d-flex align-items-center">
-                                <div class="img-booking">
-                                    <img src="/pages/img/time.svg" alt="">
-                                </div>
-                                <h1>Время:</h1>
-                                <p class="d-flex align-items-bottom">12:00</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -284,4 +167,9 @@
 	<script src="/pages/js/bootstrap.bundle.min.js"></script>
 	<!--JS-->
 	<script src="/pages/js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            getOrders();
+        });
+    </script>
 </html>

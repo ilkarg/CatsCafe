@@ -21,7 +21,12 @@ class PageController {
     }
 
     public static function admin() {
-        $template = new Template(__DIR__ . "/../pages/admin/index.html");
-        echo View::createFromTemplate($template);
+        session_start();
+        if ($_SESSION["user"] == "admin") {
+            $template = new Template(__DIR__ . "/../pages/admin/index.html");
+            echo View::createFromTemplate($template);
+        } else {
+            header("location: /");
+        }
     }
 }

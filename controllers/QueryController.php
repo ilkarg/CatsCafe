@@ -41,5 +41,26 @@ class QueryController {
         return json_encode(array("response" => "OK"));
     }
 
+    public static function addOrderQuery(string $name, string $phone, string $fare, string $date, string $time) {
+        global $orm;
+        $orm->connect();
+        $order = R::dispense("orders");
+        $order->name = $name;
+        $order->phone = $phone;
+        $order->fare = $fare;
+        $order->date = $date;
+        $order->time = $time;
+        R::store($order);
+        return json_encode(array("response" => "Бронь успешно создана"));
+    }
 
+    public static function getOrdersQuery() {
+        global $orm;
+        $orm->connect();
+        $orders = R::findAll("orders");
+        if ($orders == null) {
+            return json_encode(array("response" => "Брони не найдены"));
+        }
+        return json_encode($orders);
+    }
 }

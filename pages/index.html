@@ -226,15 +226,15 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="booking-input">
                             <label for="postTag">Ваше ФИО</label>
-                            <input name="request" type="text" id="request" placeholder="Имя">
+                            <input name="request" type="text" id="orderName" placeholder="Имя">
                         </div>
                         <div class="booking-input">
                             <label for="postTag">Ваш номер телефона</label>
-                            <input type="tel" placeholder="Телефон" id="request" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                            <input type="tel" placeholder="Телефон" id="orderPhone" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                         </div>
                         <div class="booking-input">
                             <label for="postTag">Выберите тариф</label>
-                            <select id="postTag" class="form-select" name="postTag">
+                            <select id="orderFare" class="form-select" name="postTag">
                                 <option value="Выберите время">Выберите время</option>
                                 <option value="Взрослый">Взрослый</option>
                                 <option value="Студент">Студент</option>
@@ -244,15 +244,15 @@
                         </div>
                         <div class="booking-input">
                             <label for="postTag">Выберите дату</label>
-                            <input type="date" placeholder="Телефон" id="request" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}">
+                            <input type="date" placeholder="Телефон" id="orderDate" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}">
                         </div>
                         <div class="booking-input">
                             <label for="postTag">Выберите Время</label>
-                            <input type="time" placeholder="Телефон" id="request" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}">
+                            <input type="time" placeholder="Телефон" id="orderTime" aria-invalid="false" pattern="2[0-9]{3}-[0-9]{3}">
                         </div>
                         <div class="btn-company text-center">
                             <a href="#">
-                                <button type="button" class="btn text-center">Забронировать</button>
+                                <button type="button" class="btn text-center" onclick="addOrder()">Забронировать</button>
                             </a>
                         </div>
                     </div>
